@@ -27,11 +27,12 @@
     header {
 
 	  position: relative;
-      background: #829ac4;
+	  box-sizing: border-box;
+	  width: 100%;
+	  padding: 1rem 70px 1rem 1rem;
+	  background: #829ac4;
       color: black;
-      padding: 1rem;
       text-align: center;
-	  padding-right: 100px;
     }
 
     header h1 {
@@ -46,11 +47,16 @@
 	/* Make the QR code appear on the right side of my header */
 	header .qr { 
 	  position: absolute;
-	  right: 1rem;
 	  top: 50%;
+	  right: 8px;
 	  transform: translateY(-50%);
+	  display: block;
 	  width: 64px;
 	  height: 64px;
+	  margin: 0;
+	  padding: 0;
+	  border-radius: 0;
+	  box-shadow: none;
 	  object-fit: contain;
 	}
 
