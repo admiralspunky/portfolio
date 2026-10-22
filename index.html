@@ -26,11 +26,12 @@
 
     header {
 
-		width:100%;
+	  position: relative;
       background: #829ac4;
       color: black;
-      padding: 2rem 1rem;
+      padding: 1rem;
       text-align: center;
+	  padding-right: 100px;
     }
 
     header h1 {
@@ -41,6 +42,17 @@
     header p {
       margin: 0.5rem 0 0;
     }
+	
+	/* Make the QR code appear on the right side of my header */
+	header .qr { 
+	  position: absolute;
+	  right: 1rem;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  width: 64px;
+	  height: 64px;
+	  object-fit: contain;
+	}
 
     main {
       max-width: 800px;
@@ -113,7 +125,7 @@
     <p>Programmer - Designer - Game Developer</p>
 	<a href="mailto:admiralspunky@gmail.com">admiralspunky@gmail.com</a>
 	<a href="CV.rtf">résumé</a>
-	<img src="qr.png" alt="scan me" class="thumbnail">
+	<img src="qr.png" alt="Scan to visit my portfolio" class="qr">
   </header>
 
   <main>
